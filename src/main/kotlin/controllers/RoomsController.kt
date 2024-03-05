@@ -32,11 +32,17 @@ class RoomsController {
     }
 
     fun showRooms() {
-        var counter = 1
-        for (room in roomList) {
-            printer.printMsg("$counter" + room.getRoomData())
-            counter++
+        if (roomList.isEmpty()) {
+            printer.printMsg("No se encuentran habitaciones registradas")
+        } else {
+            var counter = 1
+            for (room in roomList) {
+                printer.printMsg("$counter " + room.getRoomData())
+                counter++
+            }
         }
     }
+
+    fun areNotRoomsRegistered(): Boolean = roomList.isEmpty()
 
 }

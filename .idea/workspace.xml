@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d73da32-c25f-48ae-a9dd-04fb0bde20d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/BookingsController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/ClientsController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/MenuController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/RoomsController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/entities/Booking.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/entities/Customer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/entities/Room.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Printer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/controllers/BookingsController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/BookingsController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/controllers/ClientsController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/ClientsController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/controllers/MenuController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/MenuController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/controllers/RoomsController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controllers/RoomsController.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2d5n5vhE5N6hVFepw6cEdNcgYWy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -51,13 +36,30 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build GestionHotel.executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/danieeralexisgalvez/Documents/GIT UT/GestionHotel/src/main/kotlin/Main.kt"
+    "onboarding.tips.debug.path": "/Users/danieeralexisgalvez/Documents/GIT UT/GestionHotel/src/main/kotlin/Main.kt",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.danieer.com.MainKt" />
+      <module name="GestionHotel.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -75,5 +77,16 @@
       <updated>1709306626240</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

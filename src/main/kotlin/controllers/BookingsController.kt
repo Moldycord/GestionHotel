@@ -18,12 +18,7 @@ class BookingsController {
         val totalNights = readln().toInt()
 
         val addedBooking = Booking(
-            room,
-            customer,
-            startDate,
-            endDate,
-            totalNights,
-            false
+            room, customer, startDate, endDate, totalNights, false
         )
         addedBooking.calculatePrice()
         customer.addBooking(addedBooking)
@@ -31,9 +26,14 @@ class BookingsController {
     }
 
     fun showBookings() {
-        for (booking in bookingsList) {
-            printer.printMsg(booking.getBookingData())
+        if (bookingsList.isEmpty()) {
+            printer.printMsg("No hay habitaciones registradas")
+        } else {
+            var counter = 1
+            for (booking in bookingsList) {
+                printer.printMsg("$counter " + booking.getBookingData())
+                counter++
+            }
         }
     }
-
 }

@@ -5,7 +5,15 @@ import org.danieer.com.utils.Printer
 
 class ClientsController {
     private val printer = Printer()
-    private val clientList = mutableListOf<Customer>()
+    private val clientList = mutableListOf<Customer>(
+        Customer(
+            "Brisa",
+            "Waves",
+            "Chin",
+            "FJFJHSKASLKM9",
+            "Sm 510 Mz 58 Lt1"
+        )
+    )
 
     fun registerCustomer() {
         printer.printMsg("Ingrese los nombres")
@@ -27,12 +35,18 @@ class ClientsController {
     }
 
     fun showCustomers() {
-        var counter = 1
-        for (customer in clientList) {
-            printer.printMsg("$counter-" + customer.getCustomerData())
-            counter++
+        if (clientList.isEmpty()) {
+            printer.printMsg("No se encuentran clientes registrados")
+        } else {
+            var counter = 1
+            for (customer in clientList) {
+                printer.printMsg("$counter-" + customer.getCustomerData())
+                counter++
+            }
         }
     }
 
     fun getCustomerByIndex(index: Int): Customer = clientList[index]
+
+    fun areNotClientsRegistered(): Boolean = clientList.isEmpty()
 }

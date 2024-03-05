@@ -10,13 +10,14 @@ class MenuController {
     private val roomsController = RoomsController()
 
     fun showMenu() {
-
         printer.apply {
             printMsg("Ingrese una opción")
             printMsg("1 - Registrar habitación")
             printMsg("2 - Registrar Cliente")
             printMsg("3 - Crear reserva ")
             printMsg("4 - Mostrar habitaciones")
+            printMsg("5 - Mostrar Clientes")
+            printMsg("6 - Mostrar reservas")
 
             val selectedOption = readln().toInt()
             validateOptions(selectedOption)
@@ -44,10 +45,33 @@ class MenuController {
                 roomsController.showRooms()
                 showMenu()
             }
+
+            5 -> {
+                customersController.showCustomers()
+                showMenu()
+            }
+
+            6 -> {
+                bookingsController.showBookings()
+                showMenu()
+            }
         }
     }
 
     private fun selectCustomerAndClient() {
+
+        if (customersController.areNotClientsRegistered()) {
+            printer.printMsg("No se encuentran clientes registrados")
+            showMenu()
+            return
+        }
+
+        if (roomsController.areNotRoomsRegistered()) {
+            printer.printMsg("No se encuentran habitaciones registradas")
+            showMenu()
+            return
+        }
+
         printer.printMsg("Seleccione un cliente")
         customersController.showCustomers()
 
