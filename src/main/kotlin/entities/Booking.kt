@@ -6,7 +6,7 @@ class Booking(
     private val startDate: String,
     private val endDate: String,
     private var totalNights: Int,
-    private var isCancelled: Boolean,
+    private var isCancelled: Boolean = false,
 ) {
     private var totalPrice = 0.0
 
@@ -19,7 +19,7 @@ class Booking(
     }
 
     fun updateNights(totalNights: Int) {
-       this.totalNights = totalNights
+        this.totalNights = totalNights
     }
 
     fun getTotal(): Double = totalPrice

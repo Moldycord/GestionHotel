@@ -7,7 +7,7 @@ class MenuController {
     private val printer = Printer()
     private val bookingsController = BookingsController()
     private val customersController = ClientsController()
-    private val roomsController = RoomsController()
+    private val roomsController = RoomsController(printer)
 
     fun showMenu() {
         printer.apply {

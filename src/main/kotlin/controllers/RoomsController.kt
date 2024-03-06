@@ -3,8 +3,9 @@ package org.danieer.com.controllers
 import org.danieer.com.entities.Room
 import org.danieer.com.utils.Printer
 
-class RoomsController {
-    private val printer = Printer()
+class RoomsController(private val printer : Printer) {
+
+
     private val roomList = mutableListOf<Room>()
 
     fun registerRoom() {
@@ -17,15 +18,14 @@ class RoomsController {
         val isAvailable = true
 
         val addedRoom = Room(
-            pricePerNight,
-            capacity,
-            roomNumber,
-            isAvailable
+            pricePerNight, capacity, roomNumber, isAvailable
         )
         roomList.add(addedRoom)
     }
 
-    fun modifyRoom() {}
+    fun modifyRoom(modifiedRoom: Room, index: Int) {
+        roomList[index] = modifiedRoom
+    }
 
     fun getRoomByIndex(index: Int): Room {
         return roomList[index]

@@ -6,6 +6,7 @@ import org.danieer.com.entities.Room
 import org.danieer.com.utils.Printer
 
 class BookingsController {
+
     private val printer = Printer()
     private val bookingsList = mutableListOf<Booking>()
 
