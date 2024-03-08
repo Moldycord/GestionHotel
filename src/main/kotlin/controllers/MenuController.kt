@@ -37,7 +37,7 @@ class MenuController {
             }
 
             3 -> {
-                selectCustomerAndClient()
+                selectRoomAndCustomer()
                 showMenu()
             }
 
@@ -58,7 +58,7 @@ class MenuController {
         }
     }
 
-    private fun selectCustomerAndClient() {
+    private fun selectRoomAndCustomer() {
 
         if (customersController.areNotClientsRegistered()) {
             printer.printMsg("No se encuentran clientes registrados")

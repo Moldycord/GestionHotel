@@ -4,6 +4,7 @@ import org.danieer.com.entities.Customer
 import org.danieer.com.utils.Printer
 
 class ClientsController {
+
     private val printer = Printer()
     private val clientList = mutableListOf<Customer>(
         Customer(
@@ -44,6 +45,10 @@ class ClientsController {
                 counter++
             }
         }
+    }
+
+    fun loadClientsFromDB(){
+
     }
 
     fun getCustomerByIndex(index: Int): Customer = clientList[index]

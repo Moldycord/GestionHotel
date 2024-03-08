@@ -3,10 +3,10 @@ package org.danieer.com.controllers
 import org.danieer.com.entities.Room
 import org.danieer.com.utils.Printer
 
-class RoomsController(private val printer : Printer) {
+class RoomsController(private val printer: Printer) {
 
 
-    private val roomList = mutableListOf<Room>()
+    private val roomList = mutableListOf<Room>(Room(200.00, 2, 2, true))
 
     fun registerRoom() {
         printer.printMsg("Ingrese el precio por noche")
